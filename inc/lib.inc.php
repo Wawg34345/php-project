@@ -54,8 +54,8 @@ function count_elems($par, $mode = 0){
 
 
 //function to draw multiplication table
-function drawTable($rows, $cols){
-    echo '<table border = "1">';
+function drawTable($rows, $cols, $color){
+    echo "<table border = '1' style = 'background-color:$color'>";
     for($row = 1; $row < $rows; $row++){
         echo '<tr>';
         for($col = 1; $col < $cols; $col++){

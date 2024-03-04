@@ -6,6 +6,7 @@
 
 $title = 'Сайт нашей школы';
 $header = "Добро пожаловать, Гость!";
+$_GET['id'] = $_GET['id'] ??  'index';
 $id = strtolower(strip_tags(trim($_GET['id'])));
 switch($id){
     case 'about':

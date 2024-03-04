@@ -5,9 +5,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $operator = $_POST['operator'];
 }
 
-$num1 = isset($num1) ? $num1 : 2;
-$num2 = isset($num2) ? $num2 : 2;
-$operator = isset($operator) ? $operator : "+";
+$num1 = $num1 ?? 2;
+$num2 = $num2 ?? 2;
+$operator = $operator ?? "+";
 
 ?>
     <!-- Область основного контента -->

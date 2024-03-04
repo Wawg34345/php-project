@@ -3,8 +3,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $cols = abs((int) $_POST['cols']);
     $rows = abs((int) $_POST['rows']);
 }
-$cols = isset($cols) ? $cols : 10;
-$rows = isset($rows) ? $rows : 10;
+$cols = $cols ?? 10;
+$rows = $rows ?? 10;
 ?>
 <!-- Область основного контента -->
     <form action='<?= $_SERVER['REQUEST_URI']?>' method="post">
